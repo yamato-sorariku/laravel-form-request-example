@@ -1,4 +1,5 @@
-# Laravelで画面のPOSTとAjaxのPOSTで共通のFormRequest使う方法
+# 以下記事のサンプルです
+https://qiita.com/yamatox/items/94e123849d924329a167
 
 # インストール
 ```
