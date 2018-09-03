@@ -14,5 +14,5 @@ $ docker-compose run node npm run dev
 # Formを使ったPOSTのパターン
 http://localhost/add
 
-# Ajaxを使ったPOSTのパターン
+# Ajaxを使ったPOSTのパターン
 http://localhost/add2
