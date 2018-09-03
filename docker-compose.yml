@@ -1,0 +1,21 @@
+version: '3'
+services:
+  php:
+        build: ./Docker/app
+        volumes:
+            - ./src:/home/www/code
+        working_dir: /home/www/code
+  web:
+        build: ./Docker/web
+        ports:
+            - "80:80"
+        volumes:
+            - ./src:/home/www/code
+        working_dir: /home/www/code
+        depends_on:
+            - php
+  node:
+      image: node:9.11.2
+      volumes:
+        - ./src:/home/www/code
+      working_dir: /home/www/code
